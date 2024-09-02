@@ -1,0 +1,128 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container {
+    flex: 1;
+}
+/* Navbar  */
+.navbar {
+    background-color: white;
+    height: 5rem;
+}
+.nav-link {
+    color: #222222 !important;
+    /* margin-left: 1.9rem; */
+    background-color: white !important;
+}
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+}
+
+/* Footer */
+.f-links a {
+    text-decoration: none;
+    color: #222222;
+}
+.f-links a:hover {
+    text-decoration: underline;
+}
+.f-links, .f-socials, .f-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-socials i {
+    font-size: 1.3rem;
+    margin-right: 0.4rem;
+    color: #888;
+}
+.f-info {
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+    padding: 0.5rem;
+}
+
+/* Card images */
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+.card-img-top {
+    border-radius: 0.38rem;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body {
+    padding: 0 !important;
+}
+.card-text p {
+    font-weight: 400 !important;
+}
+.listing-img-link {
+    text-decoration: none;
+}
+/* Card overlay effect */
+.card-img-overlay {
+    opacity: 0;
+}
+.card-img-overlay:hover {
+    opacity: 0.3;
+    color: white;
+}
+
+/* New page & Edit page  */
+.add-btn, .edit-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* Show page */
+.btns {
+    display: flex;
+}
+.show-card {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Show page delete btn, Review delete btn */
+.dlt-btn, .review-dlt-btn, .signup-btn, .login-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* Review submit btn */
+.review-submit-btn:hover {
+    background-color: #fe424d !important;
+    color: white;
+    border: none !important;
+}
+
+/* Map Styling */
+#map {
+    height: 300px;
+    width: 41vw;
+}
+
+/* Auth links  */
+.auth-link {
+    text-decoration: none;
+    color: #4d4d4d;
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+.auth-link:hover {
+    text-decoration: underline;
+}
