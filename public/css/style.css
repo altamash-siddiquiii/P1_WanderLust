@@ -20,7 +20,7 @@ body {
 .fa-compass {
     color: #fe424d;
     font-size: 2rem;
-    margin-left: 1.5rem;
+    margin-left: 1.3rem;
     margin-right: 1rem;
 }
 
@@ -39,9 +39,13 @@ body {
     justify-content: center;
 }
 .f-socials i {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     margin-right: 0.4rem;
     color: #888;
+}
+.f-socials i:hover {
+    font-size: 1.45rem;
+    color: #fe424d;
 }
 .f-info {
     text-align: center;
@@ -81,9 +85,8 @@ body {
     opacity: 0.3;
     color: white;
 }
-
-/* New page & Edit page  */
-.add-btn, .edit-btn {
+/* Buttons styling  */
+.add-btn, .edit-btn, .dlt-btn, .review-dlt-btn, .signup-btn, .login-btn {
     background-color: #fe424d !important;
     border: none !important;
 }
@@ -97,12 +100,6 @@ body {
     padding-right: 0;
 }
 
-/* Show page delete btn, Review delete btn */
-.dlt-btn, .review-dlt-btn, .signup-btn, .login-btn {
-    background-color: #fe424d !important;
-    border: none !important;
-}
-
 /* Review submit btn */
 .review-submit-btn:hover {
     background-color: #fe424d !important;
@@ -112,8 +109,7 @@ body {
 
 /* Map Styling */
 #map {
-    height: 300px;
-    width: 41vw;
+    height: 11rem;
 }
 
 /* Auth links  */
@@ -121,8 +117,19 @@ body {
     text-decoration: none;
     color: #4d4d4d;
     font-weight: 500;
-    font-size: 0.85rem;
+    font-size: 0.83rem;
 }
 .auth-link:hover {
     text-decoration: underline;
+    font-weight: 600;
+}
+
+
+@media (max-width: 575px) {
+    .card {
+        margin: 0 1rem 1.3rem;
+    }
+    .filters {
+        margin: 0 1rem;
+    }
 }
