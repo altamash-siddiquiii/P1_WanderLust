@@ -1,60 +1,15 @@
+:root {
+    --web-theme: #fe424d;
+}
 body {
     font-family: "Plus Jakarta Sans", sans-serif !important;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-.container {
+.container-fluid {
     flex: 1;
-}
-/* Navbar  */
-.navbar {
-    background-color: white;
-    height: 5rem;
-}
-.nav-link {
-    color: #222222 !important;
-    /* margin-left: 1.9rem; */
-    background-color: white !important;
-}
-.fa-compass {
-    color: #fe424d;
-    font-size: 2rem;
-    margin: 0.05rem 1rem 0 0.5rem;
-}
-
-/* Footer */
-.f-links a {
-    text-decoration: none;
-    color: #222222;
-}
-.f-links a:hover {
-    text-decoration: underline;
-}
-.f-links, .f-socials, .f-brand {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.f-socials i {
-    font-size: 1.35rem;
-    margin-right: 0.4rem;
-    color: #888;
-}
-.f-socials i:hover {
-    font-size: 1.45rem;
-    color: #fe424d;
-}
-.f-info {
-    text-align: center;
-    height: 8rem;
-    background-color: #ebebeb;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: space-evenly;
-    padding: 0.5rem;
+    padding: 0 2rem !important;
 }
 
 /* Card images */
@@ -63,7 +18,7 @@ body {
     margin-bottom: 2rem;
 }
 .card-img-top {
-    border-radius: 0.38rem;
+    border-radius: 0.5rem !important;
     width: 100% !important;
     object-fit: cover !important;
 }
@@ -86,7 +41,7 @@ body {
 }
 /* Buttons styling  */
 .add-btn, .edit-btn, .dlt-btn, .review-dlt-btn, .signup-btn, .login-btn {
-    background-color: #fe424d !important;
+    background-color: var(--web-theme) !important;
     border: none !important;
 }
 
@@ -101,7 +56,7 @@ body {
 
 /* Review submit btn */
 .review-submit-btn:hover {
-    background-color: #fe424d !important;
+    background-color: var(--web-theme) !important;
     color: white;
     border: none !important;
 }
@@ -111,7 +66,7 @@ body {
     height: 11rem;
 }
 
-/* Auth links  */
+/* Auth links - Signup, Login & Logout page links */
 .auth-link {
     text-decoration: none;
     color: #4d4d4d;
@@ -127,8 +82,5 @@ body {
 @media (max-width: 575px) {
     .card {
         margin: 0 1rem 1.3rem;
-    }
-    .filters {
-        margin: 0 1rem;
     }
 }

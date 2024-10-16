@@ -1,4 +1,4 @@
-// First major project - WanderLust
+// My first full stack project - Explorebnb
 
 if (process.env.NODE_ENV != "production") {
     require('dotenv').config();
@@ -95,15 +95,6 @@ app.listen(8080, () => {
 //     res.render("listings/home.ejs");
 // });
 
-// Adding a fake user for testing
-// app.get("/demouser", async (req, res) => {
-//     let fakeUser = new User({
-//         email: "fakeuser123@gmail.com",
-//         username: "fakeuser"
-//     });
-//     let registeredUser = await User.register(fakeUser, "pass123");
-//     res.send(registeredUser);
-// });
 
 // Catching all undefined routes and throwing a 404 error.
 app.all("*", (req, res, next) => {
@@ -115,5 +106,4 @@ app.use( (err, req, res, next) => {
     let { statusCode = 500, message = "Something went wrong!" } = err;
     
     res.status(statusCode).render("error.ejs", { err });
-    // res.status(statusCode).send(message);
 });

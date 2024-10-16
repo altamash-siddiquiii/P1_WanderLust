@@ -1,0 +1,142 @@
+/* Navbar  */
+.navbar {
+  background-color: white;
+  height: 5rem;
+  padding-top: 1rem;
+}
+
+.nav-link {
+  color: rgb(34, 34, 34) !important;
+  background-color: white !important;
+  font-size: 0.94rem;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.explore-link {
+  font-weight: 600;
+  font-size: 0.97rem;
+  margin-right: 0.6rem;
+}
+
+.add-new-link {
+  font-weight: 600;
+  padding: 0.45rem 0.8rem !important;
+}
+
+.add-new-link:hover,
+.experience-link:hover {
+  border-radius: 2.5rem;
+  border: 1px solid #eee;
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.navbar-logo-text {
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+}
+
+.web-logo {
+  color: var(--web-theme);
+  font-size: 2.15rem;
+  margin-left: 0.55rem;
+}
+
+.web-logo-text {
+  font-family: 'Poppins', sans-serif;
+  color: var(--web-theme);
+  font-weight: 700;
+  font-size: 1.35rem;
+  line-height: 20px;
+}
+
+.search-btn {
+  background-color: var(--web-theme);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: var(--web-theme);
+  color: #fff;
+  padding: 0.55rem 1.1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+  border-radius: 25px;
+  padding: 0 2.5rem 0 0.5rem;
+}
+
+.search-btn i {
+  font-size: 1rem;
+}
+
+.search-input::placeholder {
+  font-size: 0.85rem;
+}
+
+.user-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.user-menu-icon {
+  font-size: 1.8rem;
+  color: #222;
+  padding: 0.4rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 2.5rem;
+  margin-left: 0.6rem;
+  cursor: pointer;
+  display: flex;
+  transition: box-shadow 0.3s ease;
+}
+
+.user-menu-icon:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.menu-icon {
+  font-size: 0.85rem;
+  margin-right: 0.65rem;
+  align-content: center;
+}
+
+.dropdown-menu {
+  border-radius: 12px;
+  background-color: white;
+  padding: 0;
+}
+
+.dropdown-item {
+  padding: 0.75rem 3rem 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+  .web-logo-text,
+  .user-menu,
+  .explore-link,
+  .experience-link {
+    display: none;
+  }
+}
+
+@media (max-width: 1040px) {
+  .search-input {
+    padding-right: 0;
+  }
+}

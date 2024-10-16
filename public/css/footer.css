@@ -1,0 +1,80 @@
+/* Footer */
+.f-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ebebeb;
+    padding: 1.5rem 0.5rem;
+    margin-top: 2rem;
+    color: #343a40;
+}
+
+.f-about,
+.f-contact,
+.f-follow {
+    flex: 1;
+    margin: 0 2.5rem;
+}
+.f-heading {
+    text-align: center;
+    font-size: 1.15rem;
+    margin-bottom: 1.15rem;
+    color: #343a40;
+    line-height: 1.5rem;
+}
+.f-about-content {
+    font-size: 0.88rem;
+    line-height: 1.4;
+    text-align: justify;
+}
+.f-contact .f-contact-content {
+    font-size: 0.88rem;
+    margin-left: 4rem;
+    padding: 0;
+}
+.f-contact-content p a,span {
+    text-decoration: none;
+    color: #343a40;
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+.f-follow .f-social-icons {
+    text-align: center;
+}
+.f-social-icons a {
+    text-decoration: none;
+    margin-left: 1rem;
+    font-size: 2.2rem;
+    color: #343a40;
+    transition: 0.3s ease-in-out;
+}
+.f-social-icons i:hover {
+    font-size: 2.4rem;
+    color: var(--web-theme);
+}
+
+.f-bottom {
+    text-align: center;
+    padding: 1rem 0;
+    color: #343a40;
+    font-size: 0.83rem;
+}
+.f-links a {
+    text-decoration: none;
+    color: #222222;
+}
+.f-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .f-container {
+        flex-direction: column;
+        padding: 1.5rem 3.3rem;
+    }
+    .f-about, .f-contact, .f-follow {
+        margin: 0 0.5rem 2rem 0.5rem;
+    }
+    .f-contact .f-contact-content {
+        margin-left: 0rem;
+    }
+}
